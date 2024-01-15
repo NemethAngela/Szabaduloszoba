@@ -1,0 +1,21 @@
+<!-- {{reservations|json}} -->
+
+<p>Új foglalás:</p>
+
+<div class="row">
+    <div class="col">Dátum</div>
+    <div class="col">Név</div>
+    <div class="col">Fő</div>
+    <div class="col">Cím</div>
+    <div class="col">Irsz</div>
+    <div class="col">Hozzáadás</div>
+</div>
+
+<div class="row">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        <input [(ngModel)]="newReservation[oszlop]" type="text" class="form-control">    
+    </div>
+    <div class="col">
+        <button (click)="postReservation()" type="button" class="btn btn-warning">Hozzáad</button>        
+    </div>
+</div>

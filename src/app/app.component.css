@@ -1,0 +1,19 @@
+.container {
+    background-color:  rgb(238, 247, 250);
+}
+
+.image {
+    width: 400px;   
+}
+
+.idezet {
+    width: 450px;
+    height: 80px;
+    font-size: 16px;
+    background-color: rgb(130, 188, 188);
+    margin: 75px;
+    float: right;
+    border-right: 8px solid burlywood;
+    margin-right: 300px;
+    padding: 10px;
+}

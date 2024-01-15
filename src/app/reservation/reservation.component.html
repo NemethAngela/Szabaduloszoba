@@ -1,0 +1,22 @@
+<p>Foglalások</p>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">Dátum</th>
+			<th scope="col">Név</th>
+			<th scope="col">Fő</th>
+			<th scope="col">Helyszín</th>
+			<th scope="col">Irányítószám</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let reservation of reservations; let i = index">
+            <td>{{ reservation.datum | date }}</td>
+            <td>{{ reservation.nev }}</td>
+            <td>{{ reservation.fo | number }}</td>
+            <td>{{ reservation.cim }}</td>
+            <td>{{ reservation.iranyitoszam }}</td>
+        </tr>
+	</tbody>
+</table>
